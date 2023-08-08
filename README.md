@@ -1,3 +1,9 @@
 #api-to-sql
-<h2>Handle large API datasets and stores data in SQL database</h2>
-<p>Paginates through API with requests and pandas dataframe --> maps dataframe onto SQLite database</p>
+<h2>Import large Socrata datasets into SQLite database.</h2>
+<p>This program will:</p>
+<ul>
+    <li>Paginate API response with limit and offset query parameters.</li>
+    <li>Create pandas dataframe with JSON data from API response.<li>
+    <li>Write data from dataframe to SQLite database.</li>
+</ul>
+<p>This program is currently designed for SODA API endpoints.</p>
