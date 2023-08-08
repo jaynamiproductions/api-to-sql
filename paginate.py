@@ -7,13 +7,12 @@ def paginate_tosql(url):
     limit = 1000
     offset = 0
     while True:
-        url += '?$limit='+ str(limit) +'&$offset='+str(offset)+'&$order=:id'
-        resp = requests.get(url).json()
+        base = url
+        api = base + '?$limit='+ str(limit) +'&$offset='+str(offset)+'&$order=:id'
+        resp = requests.get(api).json()
         df = pd.DataFrame(resp)
         df = df.applymap(str)
         df.to_sql('table',conn,if_exists='append',index=False)
         if df.shape[0] != limit:
             break
         offset += 1000
-    return pd.read_sql('SELECT * FROM table',conn)
-
