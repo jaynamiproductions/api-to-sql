@@ -1,2 +1,3 @@
 #api-to-sql
-<p>Paginates through API with pandas dataframe --> maps dataframe onto SQLite database --> read database with pandas</p>
+<h2>Handle large API calls and store data in SQL database</h2>
+<p>Paginates through API with requests and pandas dataframe --> maps dataframe onto SQLite database</p>
