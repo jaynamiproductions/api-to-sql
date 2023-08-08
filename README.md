@@ -8,3 +8,4 @@
 </ul>
 <br/>
 <p>This program is currently designed for SODA API endpoints.</p>
+<p><a href="https://dev.socrata.com/docs/endpoints.html">Socrata-SODA API Documentation</a></p>
