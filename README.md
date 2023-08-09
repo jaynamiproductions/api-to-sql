@@ -1,11 +1,12 @@
 #api-to-sql
-<h2>Import large Socrata datasets into SQLite database.</h2>
+<h2>Import large datasets into SQLite database.</h2>
 <p>This program will:</p>
 <ul>
-    <li>Paginate API response with limit and offset query parameters.</li>
+    <li>Paginate API response.</li>
     <li>Create pandas dataframe with JSON data from API response.</li>
     <li>Write data from dataframe to SQLite database.</li>
 </ul>
 <br/>
-<p>This program is currently designed for SODA API endpoints.</p>
+<p>This program is currently designed for APIs with limit and offset query parameters.</p>
 <p><a href="https://dev.socrata.com/docs/endpoints.html">Socrata-SODA API Documentation</a></p>
+<p><a href="https://data.cms.gov/sites/default/files/2022-08/API%20FAQ%20v1_0.pdf">Centers for Medicare and Medicaid Services API FAQ</a></p>
