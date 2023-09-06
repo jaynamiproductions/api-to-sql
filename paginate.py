@@ -2,7 +2,7 @@ import sqlite3
 import requests
 import pandas as pd
 
-def api_tosql(url, db_name,tbl_name):
+def api_tosql(url, db_name, tbl_name):
     conn = sqlite3.connect(db_name)
     limit = 1500
     offset = 0
